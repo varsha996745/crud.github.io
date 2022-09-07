@@ -1,0 +1,45 @@
+<!-- <p>add-employee works!</p> -->
+<nav class="navbar navbar-primary bg-primary">
+      
+         
+    <div class="container-fluid">
+        <div class="row">
+           <div class="col-md-12">
+            <h2 style="color:white;">Employee Management</h2>
+           
+
+           </div>
+          
+           
+           </div>
+       
+    </div>
+ 
+
+    
+
+
+
+</nav><br><br><br><br><br><br>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h3>Add Employee Here</h3><br>
+            <form #data="ngForm" (submit)="createEmployee(data)">
+               First Name : <input type="text" name="firstName"[(ngModel)]="firstName" placeholder="Enter First Name"><br><br>
+                Last Name : <input type="text" name="lastName"[(ngModel)]="lastName"placeholder="Enter Last Name"><br><br>
+                
+                Enter Salary : <input type="number"name="salary"[(ngModel)]="salary" ><br><br>
+            
+            
+            
+                <button class="btn btn-danger mx-5" type="submit" >add data</button>  
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
+

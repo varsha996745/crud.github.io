@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "9f943fd7-23ed-4e82-b577-88c3ed2e2055"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -27,9 +30,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",   
+              "node_modules/popper/index.js"   
+            ]
           },
           "configurations": {
             "production": {
@@ -47,7 +54,7 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
+                  "replace": "src/environments/environment.ts",  
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
@@ -55,7 +62,7 @@
             },
             "development": {
               "buildOptimizer": false,
-              "optimization": false,
+              "optimization": false, 
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
@@ -94,9 +101,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              
             ],
-            "scripts": []
+            "scripts": [
+             
+            ]
           }
         }
       }

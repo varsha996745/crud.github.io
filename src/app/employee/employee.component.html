@@ -1,0 +1,63 @@
+
+<div class="container-fluid">
+    <nav class="navbar navbar-primary bg-primary">
+      
+         
+            <div class="container-fluid">
+                <div class="row">
+                   <div class="col-md-12">
+                    <h2 style="color:white;">Employee Management</h2>
+                   
+
+                   </div>
+                  
+                   
+                   </div>
+               
+            </div>
+         
+
+            
+        
+
+      
+      </nav>
+
+      <table class=" table " style="height:650px ; background-color:aquamarine; ">    
+
+        <tr >  
+            <th>first name</th>
+            <th>last name</th>
+            <th>salary</th>
+            
+       
+            
+            <th>Action</th> 
+            <a href="addemployee"><h5 style="color:blue" class="mt-5">Add Employee</h5></a>
+        </tr>
+    
+    
+        <tr *ngFor="let emp of employee">    
+         
+            <td>{{emp.firstName}}</td>
+            <td>{{emp.lastName}}</td>
+            <td>{{emp.salary}}</td> 
+            <td>
+                <button class=" btn btn-warning mx-3">  <a [routerLink]="['update/',emp.id]">Edit</a> </button>
+                <button class=" btn btn-danger"> <a href=""(click)="deleteempser(emp.id)">Delete</a> </button>
+                <!-- <button class=" btn btn-success mx-3"> <a [routerLink]="['/view',emp.id]">View</a> </button> -->
+            </td>  
+    
+        
+    
+        </tr>        
+    </table> 
+</div>
+
+
+
+
+
+    
+ 
+

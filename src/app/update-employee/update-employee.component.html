@@ -1,0 +1,46 @@
+<nav class="navbar navbar-primary bg-primary">
+      
+         
+    <div class="container-fluid">
+        <div class="row">
+           <div class="col-md-12">
+            <h2 style="color:white;">Employee Management</h2>
+           
+
+           </div>
+          
+           
+           </div>
+       
+    </div>
+ 
+
+    
+
+
+
+</nav><br><br><br><br><br><br>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <form (submit)="updateEmp()">
+                <!-- <h6>id {{id}} <br></h6> -->
+                <h3>Edit Details here</h3><br>
+                First name : <input type="text" name="firstName" [(ngModel)]="data.firstName" placeholder="Enter First Name"><br><br>
+                Last name : <input type="text" name="lastName" [(ngModel)]="data.lastName"  placeholder="Enter Last Name"><br><br>
+                Enter salary : <input type="number" name="salary" [(ngModel)]="data.salary"><br> <br>
+            
+                <button class="btn btn-danger mx-5" type="submit">update</button>     
+            
+            
+            
+            
+            </form> 
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
